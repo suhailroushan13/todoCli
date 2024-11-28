@@ -1,0 +1,21 @@
+{
+  "name": "todocli",
+  "version": "1.0.0",
+  "description": "This is cli for tracking todos",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "todo",
+    "tracker",
+    "nodejs",
+    "es6"
+  ],
+  "author": "Suhail Roushan",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
