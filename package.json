@@ -1,20 +1,27 @@
 {
   "name": "todocli",
   "version": "1.0.0",
-  "description": "This is cli for tracking todos",
-  "main": "app.js",
   "type": "module",
+  "description": "This is a todo cli application",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/suhailroushan13/todoCli.git"
+  },
   "keywords": [
-    "todo",
-    "tracker",
     "nodejs",
-    "es6"
+    "es6",
+    "cli"
   ],
   "author": "Suhail Roushan",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suhailroushan13/todoCli/issues"
+  },
+  "homepage": "https://github.com/suhailroushan13/todoCli#readme",
   "dependencies": {
     "readline-sync": "^1.4.10"
   }

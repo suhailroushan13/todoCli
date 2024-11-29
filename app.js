@@ -1,45 +1,45 @@
-// // ES5  you dont need "type" : "module"
-// const readline = require("readline-sync")
-
-// ES6 you need "type" : "module"  in package.json
 import readline from "readline-sync";
-import registerUser from "./users/index.js";
-
+import { registerUser, loginUser } from "./users/index.js";
 
 async function main() {
   console.clear();
-  console.log("************************");
-  console.log("--------Todo CLI--------");
-  console.log("************************");
+  console.log("----------------------------------");
+  console.log("-----------Todo CLI---------------");
+  console.log("----------------------------------");
 
   const options = [
     "Exit",
-    "Register",
-    "Login",
-    "Add Task",
-    "Edit Task",
-    "Delete Task",
-    "Delete a User",
+    "Register", // user
+    "Login", // user
+    "Add Task", // task
+    "Edit Task", // task
+    "Delete Task", // task
+    "Delete User", // user
   ];
 
-  options.map((text, index) => console.log(`${index}. ${text}`));
-  console.log("\n");
-  
-  const userInput = readline.questionInt("Enter your option : ");
+  options.map((x, index) => console.log(`${index}. ${x}`));
 
-//   console.log(userOption);
+  const userInput = readline.questionInt("Select your option : ");
+  console.log(userInput);
 
   switch (userInput) {
+    case 0:
+      console.log("Exit");
+      break;
     case 1:
-      await registerUser()
+      console.log("Register");
+      await registerUser();
       break;
     case 2:
       console.log("Login");
+      // loginUser();
       break;
     default:
-      console.log("Invalid Option ! Please Try Again");
+      console.log("Invalid Option");
       break;
   }
 }
 
 main();
+
+

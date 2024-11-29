@@ -1,0 +1,45 @@
+// Steps to start a backend application
+
+1. create a private repo and clone it 
+2. git clone ssh-url
+3. cd folderName and code . which opens vs code
+4. npm init or npm init -y
+5. create a file name .gitignore and add in that node_modules
+6. create a file called app.js (touch app.js)
+7. add "type":"module" in package.json anywhere at any line with , comma
+8. Install all the packages which you need 
+Ex : npm install readline-sync chalk dotenv 
+npm install ==> It will check all packages from package.json and install packages
+
+
+
+// sudo code // steps to write in any file using fs 
+
+1. make sure when you or user press 1  it calls register function 
+// check it by a console.log
+2. also make sure its correctly imported and exported 
+// if single fuction ==> export default fuctionName
+// if multple function => export {fun1,fun2}
+// if multple import {fun1,fun2} from "./user/index.js"
+3. then ask from user , register details 
+example : username,password using readline-sync 
+// also make sure readline package is installed
+4. fetch data from db.json ==> which gives output in string format
+5. convert that string format js code using JSON.parse()
+example : let arr = `[2,3,5,6,5]`  
+6. store username and password in a object;
+7. and final step when you write in file again it should be in string format
+
+
+
+1. take data from json in string;
+2.convert that data to js code parse
+3. do your code operation exmaple array method  push
+4. convert your code to string
+
+
+
+
+
+
+
